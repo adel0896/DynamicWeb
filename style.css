@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #f3ede1;
+}
+/* this will be changed with the logo */
+h1 {
+  padding: 1rem;
+}
+h2,
+h3 {
+  font-family: Roboto, sans-serif;
+  color: #132610;
+}
+p {
+  padding: 1rem;
+  font-family: Nunito, sans-serif;
+  color: #132610;
+}
+/* Product */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  padding: 2rem;
+}
+nav a {
+  font-family: roboto, sans-serif;
+  text-decoration: none;
+  padding: 1rem;
+  color: #132610;
+}
+nav a:hover {
+  color: #198006;
+}
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+}
+label {
+  font-family: roboto, sans-serif;
+  padding: 1rem;
+}
+select {
+  background: #f2e6d0;
+  padding: 1rem;
+}
+ol li a {
+  padding: 1rem;
+  text-decoration: none;
+  font-family: Nunito, sans-serif;
+  color: #132610;
+}
+ol li a:hover {
+  color: #198006;
+}
+.purchasebox {
+  background: #f2dcb3;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  background: #f2e6d0;
+  padding: 2rem;
+}
+.product main {
+  display: grid;
+}
+.product img {
+  place-self: center;
+  width: 100%;
+}
+.product main .breadcrumbs {
+  grid-column: 1/-1;
+}
+.purchasebox form {
+  margin-top: auto;
+}
+.purchasebox button {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  color: #f2e6d0;
+  background-color: #403425;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .product main {
+    grid-template-columns: 1fr 600px;
+  }
+  .purchasebox {
+    width: 80%;
+    border-radius: 1rem;
+    place-self: center;
+  }
+  .purchasebox button {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .purchasebox h2 {
+    font-size: 2rem;
+  }
+  .info {
+    grid-column: 1/-1;
+  }
+  .product img {
+    width: 60%;
+  }
+}
+/* Category */
+.letterlinks ol {
+  margin-top: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: #132610;
+}
+.category main {
+  display: flex;
+  flex-direction: column;
+}
