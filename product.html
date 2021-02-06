@@ -23,20 +23,17 @@
           <a href="category.html">Categories</a>
         </li>
         <li>
-          <a href="productlist.html">T-shirts</a>
+          <a href="productlist.html" class="shirts"></a>
         </li>
         <li>
-          <a href="product.html">Grey Leaping Cat T-shirt</a>
+          <a href="product.html" class="productname"></a>
         </li>
       </ol>
-      <img
-        src="	https://kea-alt-del.dk/t7/images/webp/640/1532.webp"
-        alt="Grey Leaping Cat T-shirt"
-      />
+      <img class="productImg" />
       <section class="purchasebox">
-        <h2>Grey Leaping Cat T-shirt</h2>
-        <p>Puma</p>
-        <p>Price:899dkk</p>
+        <h2 class="name"></h2>
+        <p class="brand"></p>
+        <p>Price:<span></span></p>
         <form>
           <label>
             Choose size
@@ -49,32 +46,40 @@
               <option>XXL</option>
             </select>
           </label>
-          <button>Add to basket</button>
+          <button><a href="#">Add to basket</a></button>
         </form>
       </section>
       <section class="info">
-        <h2>More Info</h2>
-        <h3>Model name</h3>
-        <p>Grey Leaping Cat T-shirt</p>
-        <h3>Article type</h3>
-        <p>T-shirt</p>
-        <h3>Season</h3>
-        <p>Fall</p>
-        <h3>Style</h3>
-        <p>Casual</p>
-        <h2>Puma</h2>
-        <p>
-          "Sport has the power to transform and empower us. As one of the
-          world’s leading sports brands, it’s only natural that we want to stand
-          on the same playing field as the fastest athletes on the planet. To
-          achieve that, the PUMA brand is based on the very values that make an
-          excellent athlete."
-        </p>
+        <div>
+          <h2>More Info</h2>
+          <h3>Model name</h3>
+          <p class="name">Grey Leaping Cat T-shirt</p>
+          <h3>Article type</h3>
+          <p class="type">T-shirt</p>
+          <h3>Season</h3>
+          <p class="season">Fall</p>
+          <h3>Style</h3>
+          <p class="style">Casual</p>
+        </div>
+        <div>
+          <h2>Puma</h2>
+
+          <p class="branddescription"></p>
+          <section class="description">
+            <h2>Product Description</h2>
+          </section>
+        </div>
       </section>
     </main>
     <footer>
-      <p>Source of data...</p>
+      <p>
+        All images and data come from :
+        <a href="">
+          https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a
+        >
+      </p>
       <p>Adelina Radulescu 2021</p>
     </footer>
+    <script src="product.js"></script>
   </body>
 </html>
