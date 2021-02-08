@@ -281,19 +281,22 @@ h2 {
   margin: 0;
   padding: 0;
 }
-.oldprice {
-  text-decoration: line-through;
-}
 /* .price {
-  margin: 0;
+  text-decoration: line-through;
 } */
 .list article {
   display: flex;
   flex-direction: column;
 }
 .list article .discount {
+  display: none;
+}
+.list article.onsale .discount {
   display: flex;
   justify-content: space-between;
+}
+.list article.onsale .price {
+  display: initial;
 }
 .list article .discount .per {
   background-color: #1f3d1a;
@@ -305,10 +308,10 @@ h2 {
   margin-right: 0.8rem;
   align-self: center;
 }
-.list .productsoldout {
+.list .soldout {
   opacity: 0.5;
 }
-.list .productsoldout::before {
+.list .soldout::before {
   content: "Sold Out";
   position: absolute;
   background: #1f3d1a;
@@ -335,8 +338,6 @@ h2 {
   border: tan;
   font-size: 1.5rem;
   background-color: #f3ede1;
-
-  /* align-self: center; */
 }
 .list button a {
   text-decoration: none;
