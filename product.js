@@ -26,6 +26,7 @@ function showProduct(product) {
   document.querySelector(".info .type").textContent = product.articletype;
   document.querySelector(".info .season").textContent = product.season;
   document.querySelector(".info .style").textContent = product.usagetype;
+  document.querySelector(".info .brandnamee").textContent = product.brandname;
   document.querySelector(".info .branddescription").textContent =
     product.brandbio;
 }

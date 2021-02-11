@@ -1,4 +1,9 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=1000";
+const urlParams = new URLSearchParams(window.location.search);
+const subcategory = urlParams.get("subcategory");
+document.querySelector("main h2").textContent = subcategory;
+
+const url = "https://kea-alt-del.dk/t7/api/products?subcategory=" + subcategory;
+
 fetch(url)
   .then(function (res) {
     return res.json();

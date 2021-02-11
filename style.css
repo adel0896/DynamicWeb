@@ -190,6 +190,10 @@ ol li a:hover {
   color: #132610;
   font-size: 1.5rem;
 }
+.letterlinks a,
+.categories h2 {
+  text-transform: uppercase;
+}
 .category main {
   display: grid;
 }
